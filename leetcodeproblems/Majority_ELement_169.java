@@ -17,7 +17,7 @@ public class Majority_ELement_169 {
     //     }
     //     return candidate;
     // }
-    public int majorityElement(int[] arr) {
+    public static int majorityElement(int[] arr) {
         float len =arr.length;
         if(len==1){
             return arr[0];
