@@ -17,6 +17,6 @@ public class Merge_2_sorted_array_88 {
         int m=arr1.length;
         int []arr2={1,2,3};
         int n=arr2.length;
-        merge(arr1,3,arr2,3);
+        merge(arr1,m,arr2,n);
     }
 }

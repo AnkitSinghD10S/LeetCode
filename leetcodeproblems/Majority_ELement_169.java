@@ -58,5 +58,6 @@ public class Majority_ELement_169 {
             arr[i]=sc.nextInt();    
         }
         majorityElement(arr);
+        sc.close();
     }
 }

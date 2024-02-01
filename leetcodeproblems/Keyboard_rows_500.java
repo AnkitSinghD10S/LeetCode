@@ -69,5 +69,6 @@ public class Keyboard_rows_500 {
         for(int i=0;i<newwords.length;i++){
             System.out.println(newwords[i]);
         }
+        sc.close();
     }
 }
