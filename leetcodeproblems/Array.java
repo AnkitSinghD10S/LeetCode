@@ -30,10 +30,10 @@ public class Array {
         }
         return sum;
     }
-    public static void main(String[] args) {
-        Array array = new Array();
-        int arr[]=array.input();
+    // public static void main(String[] args) {
+    //     Array array = new Array();
+    //     int arr[]=array.input();
         
-    }
+    // }
 }
 
