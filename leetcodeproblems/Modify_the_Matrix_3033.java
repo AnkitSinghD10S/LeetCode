@@ -1,4 +1,4 @@
-public class Modify_the_Matrix_3033 {
+public class Modify_the_Matrix_3033{
     public int[][] modifiedMatrix(int[][] matrix) {
         int row = matrix.length;
         int col = matrix[0].length;
