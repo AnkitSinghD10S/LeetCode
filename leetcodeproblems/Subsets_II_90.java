@@ -28,4 +28,18 @@ public class Subsets_II_90 {
             temp.remove(temp.size()-1);
         }
     }
+
+    //another approach
+    public void gen(int []arr,List<List<Integer>> list,List<Integer> temp,int idx){
+        if(idx==arr.length){
+            if(!list.contains(temp)){
+                list.add(new ArrayList<>(temp));
+            }
+            return;
+        }
+        temp.add(arr[idx]);
+        gen(arr,list,temp,idx+1);
+        temp.remove(temp.size()-1);
+        gen(arr,list,temp,idx+1);
+    }
 }
