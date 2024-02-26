@@ -32,7 +32,7 @@ public class Combination_Sum_II_40 {
     }
     public void sum(int [] arr,int t,List<List<Integer>> list,List<Integer> temp,int sum,int idx){
         if(sum==t){
-            list.add(new ArrayList(temp));
+            list.add(new ArrayList<>(temp));
             return;
         }
         if(sum>t){
