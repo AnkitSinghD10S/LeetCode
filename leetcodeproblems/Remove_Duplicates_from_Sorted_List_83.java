@@ -10,15 +10,12 @@ public class Remove_Duplicates_from_Sorted_List_83 {
         }
             return head;
         }
-    public class ListNode{
-        ListNode next;
-        int val;
-        ListNode(int x){
-            this.val=x;
-            ListNode next=null;
+    class ListNode {
+            int val;
+            ListNode next;
+            ListNode(int x) {
+            val = x;
+            next = null;
         }
-    }
-    public static void main(String[] args) {
-        
     }
 }
