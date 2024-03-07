@@ -57,11 +57,3 @@ public class Middle_of_the_Linked_List_876 {
     return len;
     }
 }
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) {
-    val = x;
-    next = null;
-}
-}
