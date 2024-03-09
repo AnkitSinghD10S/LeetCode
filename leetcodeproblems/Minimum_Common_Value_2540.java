@@ -45,4 +45,28 @@ public class Minimum_Common_Value_2540 {
         }
         return -1;
     }
+
+    // Two pointer faster approch 
+    public int getCommon3(int[] nums1, int[] nums2) {
+        int first=0;
+        int second=0;
+        int len1=nums1.length;
+        int len2=nums2.length;
+        if(nums1[len1-1]<nums2[0] || nums1[0]>nums2[len2-1]){
+            return -1;
+        }
+        while(first<nums1.length && second<nums2.length){
+            if(nums1[first]==nums2[second]){
+                return nums1[first];
+            }
+            else if(nums1[first]>nums2[second]){
+                second++;
+            }
+            else{
+                first++;
+            }
+        }
+        return -1;
+    }
+
 }
