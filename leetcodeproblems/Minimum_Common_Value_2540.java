@@ -14,7 +14,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Minimum_Common_Value_2540 {
-   public int getCommon(int[] nums1, int[] nums2) {
+    // HashSet impelementation
+   public int getCommon1(int[] nums1, int[] nums2) {
         Set<Integer> set = new HashSet<>();
         for(int num:nums1){
             set.add(num);
@@ -26,4 +27,22 @@ public class Minimum_Common_Value_2540 {
         }
         return -1;
     }  
+
+    // Two Pointer approch
+    public int getCommon2(int[] nums1, int[] nums2) {
+        int first=0;
+        int second=0;
+        while(first<nums1.length && second<nums2.length){
+            if(nums1[first]==nums2[second]){
+                return nums1[first];
+            }
+            else if(nums1[first]>nums2[second]){
+                second++;
+            }
+            else{
+                first++;
+            }
+        }
+        return -1;
+    }
 }
