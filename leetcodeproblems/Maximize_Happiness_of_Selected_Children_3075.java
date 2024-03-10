@@ -27,7 +27,8 @@ Constraints:
 1 <= n == happiness.length <= 2 * 105
 1 <= happiness[i] <= 108
 1 <= k <= n */
-public class Maximize_Happiness_of_Selected-Children_3075 {
+import java.util.*;
+public class Maximize_Happiness_of_Selected_Children_3075 {
     public long maximumHappinessSum(int[] happiness, int k) {
         Arrays.sort(happiness);
         int i=happiness.length-1;
