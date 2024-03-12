@@ -17,7 +17,6 @@ Each node in the linked list has -1000 <= node.val <= 1000
  */
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class Remove_Zero_Sum_Consecutive_Nodes_from_Linked_List_1171 {
